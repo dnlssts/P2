@@ -14,9 +14,8 @@ namespace P2.Models
         public string Nome { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "Esse campo é obrigatório!!")]
-        [StringLength(8)]
         [Display(Name = "Data de nascimento")]
-        public string Datan { get; set; } = string.Empty;
+        public DateOnly Datan { get; set; }
 
         [Required(ErrorMessage = "Esse campo é obrigatório!!")]
         [StringLength(15)]
